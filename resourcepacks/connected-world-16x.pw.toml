@@ -1,0 +1,13 @@
+name = "Connected World 16x"
+filename = "Connected World v1.4 for 1.20.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/oVNsKG3I/versions/TspfLGUK/Connected%20World%20v1.4%20for%201.20.zip"
+hash-format = "sha1"
+hash = "0fbd72beb682bdb44c0695119b13dcc8c18ae9ce"
+
+[update]
+[update.modrinth]
+mod-id = "oVNsKG3I"
+version = "TspfLGUK"
