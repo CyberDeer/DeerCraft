@@ -1,12 +1,12 @@
 name = "DeerCraft"
 author = "ceski23"
-version = "1.3.0"
+version = "1.3.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "8401a6a1f791559dcbb50cacec79175b2388df1797a8e04e63e383fcc1df9d40"
+hash = "3fb5a45d0a20792ac6d8dd151a2d5eeef3f013c4371d0fd4445fdfcbcee86b90"
 
 [versions]
 fabric = "0.15.7"
