@@ -1,0 +1,49 @@
+name: Release
+on: workflow_dispatch
+
+jobs:
+  release:
+    name: Release new version
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dasel
+        uses: jaxxstorm/action-install-gh-release@v1.10.0
+        with:
+          repo: TomWright/dasel
+          tag: v2.6.0
+          extension-matching: disable
+          rename-to: dasel
+          chmod: 0755
+
+      - name: Install packwiz
+        uses: dawidd6/action-download-artifact@v3
+        with:
+          github_token: ${{secrets.GITHUB_TOKEN}}
+          name: Linux 64-bit x86
+          path: /usr/local/bin
+          repo: packwiz/packwiz
+          run_id: 7317810289
+      - run: chmod +x /usr/local/bin/packwiz
+
+      - name: Semantic Release
+        id: semantic-release
+        uses: cycjimmy/semantic-release-action@v4
+        with:
+          semantic_version: 23.0.2
+          extra_plugins: |
+            @semantic-release/changelog@6.0.3
+            @semantic-release/git@10.0.1
+            @semantic-release/exec@6.0.3
+            @semantic-release/github@9.2.6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    outputs:
+      new_release_git_tag: ${{ steps.semantic-release.outputs.new_release_git_tag }}
+      new_release_version: ${{ steps.semantic-release.outputs.new_release_version }}
