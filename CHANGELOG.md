@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/CyberDeer/DeerCraft/compare/v1.2.0...v1.2.1) (2024-03-18)
+
+
+### Bug Fixes
+
+* remove beavers ([f20de78](https://github.com/CyberDeer/DeerCraft/commit/f20de7874f93480d58fc0abaa7adcc8cc0e08372))
+
 # [1.2.0](https://github.com/CyberDeer/DeerCraft/compare/v1.1.1...v1.2.0) (2024-03-18)
 
 
