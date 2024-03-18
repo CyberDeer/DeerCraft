@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/CyberDeer/DeerCraft/compare/v1.2.1...v1.2.2) (2024-03-18)
+
+
+### Bug Fixes
+
+* downgrade Ad Astra version ([4d658e0](https://github.com/CyberDeer/DeerCraft/commit/4d658e004e5354b8b2a3c0980b74193471086294))
+
 ## [1.2.1](https://github.com/CyberDeer/DeerCraft/compare/v1.2.0...v1.2.1) (2024-03-18)
 
 
