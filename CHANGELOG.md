@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/CyberDeer/DeerCraft/compare/v1.1.1...v1.2.0) (2024-03-18)
+
+
+### Features
+
+* add Ad Astra mod ([2210e96](https://github.com/CyberDeer/DeerCraft/commit/2210e9646855797609566825aa1f5cbce15a1c39))
+
 ## [1.1.1](https://github.com/CyberDeer/DeerCraft/compare/v1.1.0...v1.1.1) (2024-03-09)
 
 
